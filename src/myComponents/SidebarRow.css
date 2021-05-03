@@ -4,7 +4,7 @@
   padding: 10px 20px;
   text-decoration: none;
 }
-.sidebarRow.selected {
+.selected {
   background-color: lightgray;
 }
 .sidebarRow:hover {
@@ -28,10 +28,10 @@
 .sidebarRow:hover > .sidebarRow__title {
   font-weight: bold;
 }
-.sidebarRow.selected > .sidebarRow__icon {
+.selected > .sidebarRow__icon {
   color: red;
 }
-.sidebarRow.selected > .sidebarRow__title {
+.selected > .sidebarRow__title {
   font-weight: bold;
 }
 a{
