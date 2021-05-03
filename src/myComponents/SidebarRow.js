@@ -18,7 +18,7 @@ let sidebarComponents = document.getElementsByClassName("sidebarRow");
 
         current[0].className = current[0].className.replace(
 
-          " selected",
+          "sselected",
 
           ""
 
@@ -26,14 +26,14 @@ let sidebarComponents = document.getElementsByClassName("sidebarRow");
 
       }
 
-      this.className += " selected";
+      this.className += "sselected";
 
     });
 
     }
 
   }, []);
-  
+
   return <div className={`sidebarRow ${selected && " selected"}`}>
     <Icon className="sidebarRow__icon"/>
     <h2 className="sidebarRow__title">{title}</h2>
