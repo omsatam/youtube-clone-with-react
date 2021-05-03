@@ -34,7 +34,7 @@ let sidebarComponents = document.getElementsByClassName("sidebarRow");
 
   }, []);
   
-  return <div className={`sidebarRow ${selected && "selected"}`}>
+  return <div className={`sidebarRow ${selected && " selected"}`}>
     <Icon className="sidebarRow__icon"/>
     <h2 className="sidebarRow__title">{title}</h2>
   </div>;
