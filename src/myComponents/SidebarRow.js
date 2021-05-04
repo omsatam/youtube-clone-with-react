@@ -17,7 +17,7 @@ let sidebarComponents = document.getElementsByClassName("sidebarRow");
       this.className += " selected";
     });
     }
-  }, [current]);
+  }, []);
 
   return <div className={`sidebarRow ${selected && " selected"}`}>
     <Icon className="sidebarRow__icon"/>
