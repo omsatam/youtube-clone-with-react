@@ -30,7 +30,7 @@ function Header() {
           placeholder="search"
           type="text"
         />
-        <Link to={`/search/${inputSearch}` setInputSearch("")}>
+        <Link to={`/search/${inputSearch}`}>
           <SearchIcon className="header__inputButton" />
         </Link>
       </div>
