@@ -33,7 +33,6 @@ function Header() {
         <Link to={`/search/${inputSearch}`}>
           <SearchIcon className="header__inputButton" />
         </Link>
-        {setInputSearch("")}
       </div>
       <div className="header__icons">
         <VideoCallIcon className="header__icon" />
