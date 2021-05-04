@@ -3,36 +3,21 @@ import "./SidebarRow.css";
 
 function SidebarRow({ Icon, title, selected }) {
   useEffect(() => {
-
 let sidebarComponents = document.getElementsByClassName("sidebarRow");
-
   for (let i = 0; i < sidebarComponents.length; i++) {
-
     sidebarComponents[i].addEventListener("click", function () {
-
-      let current = document.getElementsByClassName("selected{");
-
+      let current = document.getElementsByClassName("selected");
       console.log(current);
-
       if (current.length != 0) {
-
         current[0].className = current[0].className.replace(
-
-          "sselected",
-
+          " selected",
           ""
-
-        );
-
+       );
       }
-
-      this.className += "sselected";
-
+      this.className += " selected";
     });
-
     }
-
-  }, []);
+  }, [current]);
 
   return <div className={`sidebarRow ${selected && " selected"}`}>
     <Icon className="sidebarRow__icon"/>
