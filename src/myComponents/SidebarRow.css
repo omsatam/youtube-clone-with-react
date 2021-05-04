@@ -6,6 +6,7 @@
 }
 .selected {
   background-color: lightgray;
+  text-decoration: none;
 }
 .sidebarRow:hover {
   background-color: lightgray;
