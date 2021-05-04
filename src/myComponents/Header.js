@@ -7,10 +7,19 @@ import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function Header() {
   const [inputSearch, setInputSearch] = useState("");
-
+  const history = useHistory();
+  
+  const searchOutput = (e) => {
+    e.preventDefault();
+    history.push(`/search/${inputSearch}`);
+    
+    setInputSearch("");
+  }
+  
   return (
     <div className="header">
       <div className="header__left">
@@ -30,9 +39,7 @@ function Header() {
           placeholder="search"
           type="text"
         />
-        <Link to={`/search/${inputSearch}`}>
-          <SearchIcon className="header__inputButton" />
-        </Link>
+        <SearchIcon onClick={searchOutput} className="header__inputButton" />
       </div>
       <div className="header__icons">
         <VideoCallIcon className="header__icon" />
