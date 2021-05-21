@@ -28,7 +28,7 @@ function Header() {
         <Link to="/">
           <img
             className="header__logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg"
+            src="https://i.insider.com/59a59a8d79bbfd1d008b601a?width=1200&format=jpeg"
             alt="youtube"
           />
         </Link>
