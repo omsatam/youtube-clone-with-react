@@ -15,8 +15,9 @@ function Header() {
   
   const searchOutput = (e) => {
     e.preventDefault();
+    if (inputSearch !== ""){
     history.push(`/search/${inputSearch}`);
-    
+    }
     setInputSearch("");
   }
   
